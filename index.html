@@ -14,6 +14,12 @@
       integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T"
       crossorigin="anonymous"
     />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Mate+SC&display=swap"
+      rel="stylesheet"
+    />
     <script src="https://unpkg.com/axios@1.1.2/dist/axios.min.js"></script>
     <link rel="stylesheet" href="src/style.css" />
     <title>Weather App</title>
@@ -32,9 +38,7 @@
       <div class="summary">
         <ul class="detail1">
           <h1 id="city">New York</h1>
-          <li>
-            <span id="date">Thursday 15:03</span>
-          </li>
+          <li>Last Updated: <span id="date">Thursday 15:03</span></li>
           <li id="description">Partly Cloudy</li>
         </ul>
       </div>
@@ -45,7 +49,7 @@
           </span>
           <span id="temperatureValue">16</span>
           <span class="units">
-            <a href="#" id="celcius">°C</a> |
+            <a href="#" id="celcius" class="active">°C</a> |
             <a href="#" id="fahrenheit">°F</a>
           </span>
         </div>
@@ -56,7 +60,9 @@
           </ul>
         </div>
       </div>
-      <span class="footer"
+    </div>
+    <div class="footer">
+      <span
         ><a href="https://github.com/code-codes/weather-app" target="_blank"
           ><i>Open-source code</i></a
         >
