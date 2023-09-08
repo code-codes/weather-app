@@ -1,0 +1,107 @@
+body {
+  margin: 0px;
+  padding: 0px;
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: linear-gradient(
+    178deg,
+    rgba(201, 234, 252, 0.51) 14.9%,
+    rgba(139, 192, 216, 0.73) 80%
+  );
+  color: rgb(6, 22, 87);
+  background: url('sunset.jpg') no-repeat center center/cover;
+  opacity: 1;
+}
+
+.component {
+  width: 50%;
+  height: 50%;
+  background: linear-gradient(
+    178deg,
+    rgba(201, 234, 252, 0.51) 14.9%,
+    rgba(139, 192, 216, 0.73) 80%
+  );
+  padding: 20px;
+  border-radius: 7px 7px;
+  box-shadow: 0 4px 8px 0 rgba(8, 8, 8, 0.2), 0 6px 20px 0 rgba(7, 7, 7, 0.19);
+  transition: all .3s ease-in-out;
+}
+
+.component:hover {
+  box-shadow: -3px 3px 9px 0px #86A8DB;
+}
+
+
+.search {
+  box-shadow: 0 4px 8px 0 rgba(11, 43, 173, 0.32), 0 6px 20px 0 rgba(9, 22, 74, 0.3);
+  border-radius: 7px 7px;
+}
+
+.btn {
+  margin-left: 15px;
+  background-color: rgb(6, 22, 87);
+  border-color: rgb(6, 22, 87);
+  box-shadow: 0 4px 8px 0 rgba(11, 43, 173, 0.1), 0 6px 20px 0 rgba(9, 22, 74, 0.5);
+  border-radius: 7px 7px;
+}
+
+
+ul {
+  list-style-type: none;
+}
+
+.city {
+  font-size: 2rem;
+}
+
+.row {
+  margin: 10px 0px;
+  padding: 0px;
+}
+
+.summary {
+  /*background-color: aquamarine;
+    */
+  margin: 10px 0px;
+  padding: 0px;
+}
+
+.detail1 {
+  padding: 0px;
+  margin: 0px;
+}
+
+.day {
+  margin-right: 5px;
+}
+
+.detail2 {
+  /*background-color: chartreuse;
+    */
+  padding: 10px;
+}
+
+.icon {
+  font-size: 3em;
+  vertical-align: 0.1em;
+}
+.temperature {
+  margin: 0px;
+  padding: 0px;
+}
+
+.temperatureValue {
+  font-size: 4em;
+}
+
+.type {
+  vertical-align: 2.5em;
+  font-size: 1em;
+}
+
+.climate {
+  margin-top: 1rem;
+  padding: 0px;
+}
