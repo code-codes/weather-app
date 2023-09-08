@@ -3,6 +3,7 @@ body {
   padding: 0px;
   min-height: 100vh;
   display: flex;
+  flex-direction: column;
   justify-content: center;
   align-items: center;
   background: linear-gradient(
@@ -96,6 +97,10 @@ ul {
   font-size: 4em;
 }
 
+.description {
+  text-transform: capitalize;
+}
+
 .type {
   vertical-align: 2.5em;
   font-size: 1em;
@@ -105,3 +110,9 @@ ul {
   margin-top: 1rem;
   padding: 0px;
 }
+
+.footer {
+  color: rgb(6, 22, 87);
+  font-weight: 500;
+}
+
