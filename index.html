@@ -15,7 +15,7 @@
       crossorigin="anonymous"
     />
     <script src="https://unpkg.com/axios@1.1.2/dist/axios.min.js"></script>
-    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="src/style.css" />
     <title>Weather App</title>
   </head>
   <body>
@@ -24,43 +24,46 @@
         <input
           class="col-6 search"
           type="text"
-          placeholder="Enter City"
+          placeholder="Enter a City"
           id="search-input-text"
         />
-        <input type="submit" class="col-3 btn btn-primary" />
+        <input type="submit" value="Search" class="col-3 btn btn-primary" />
       </form>
       <div class="summary">
         <ul class="detail1">
-          <li class="city">New York</li>
+          <h1 id="city">New York</h1>
           <li>
-            <span class="day">Thursday</span>
-            <span class="time">15:03</span>
+            <span id="date">Thursday 15:03</span>
           </li>
-          <li class="description">Partly Cloudy</li>
+          <li id="description">Partly Cloudy</li>
         </ul>
       </div>
       <div class="row detail2">
         <div class="col-6 temperature">
           <span>
-            <i class="icon fa-solid fa-cloud-sun fa-2xl"></i>
+            <img src="" alt="Clear" id="icon" />
           </span>
-          <span class="temperatureValue">16</span>
-          <span class="type">
+          <span id="temperatureValue">16</span>
+          <span class="units">
             <a href="#" id="celcius">°C</a> |
             <a href="#" id="fahrenheit">°F</a>
           </span>
         </div>
         <div class="col-6 climate">
           <ul>
-            <li>Precipitation: 0%</li>
-            <li>Humidity: 77%</li>
-            <li>Wind: 8km/hr</li>
+            <li>Humidity: <span id="humidity">77</span>%</li>
+            <li>Wind: <span id="wind">8</span>km/hr</li>
           </ul>
         </div>
       </div>
+      <span class="footer"
+        ><a href="https://github.com/code-codes/weather-app" target="_blank"
+          ><i>Open-source code</i></a
+        >
+        by Bhavana Boddapati</span
+      >
     </div>
-    <span class="footer"><a href="https://github.com/code-codes/weather-app"><i>Open-source code</i></a> by Bhavana Boddapati</span>
-    
+
     <script
       src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
       integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
@@ -76,6 +79,6 @@
       integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
       crossorigin="anonymous"
     ></script>
-    <script src="app.js"></script>
+    <script src="src/app.js"></script>
   </body>
 </html>
