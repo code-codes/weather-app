@@ -55,6 +55,7 @@ body {
   font-size: small;
   color: rgb(237, 32, 32);
   font-weight: 800;
+  margin-top: 5px;
 }
 
 ul {
@@ -154,5 +155,5 @@ a {
 
 .weather-forecast-temperature-min,
 .weather-forecast-day {
-  opacity: 0.9
+  opacity: 0.8
 }
