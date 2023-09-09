@@ -18,7 +18,7 @@ body {
   height: 40%;
 }
 .component {
-  width: 42%;
+  width: 44%;
   height: 40%;
   background: linear-gradient(
     178deg,
@@ -139,4 +139,14 @@ a {
   color: rgb(6, 22, 87);
   cursor: default;
   font-weight: bold;
+}
+
+.weather-forecast {
+  margin-top: 10px;
+  text-align: center;
+}
+
+.weather-forecast-temperature-min,
+.weather-forecast-day {
+  opacity: 0.9
 }
